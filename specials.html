@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Floral Design - Special Offers</title>
+<meta charset="utf-8" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<style>
+  /* Modern Premium Grid for Specials */
+  body {
+    background-color: #fcfcfc;
+  }
+  .specials-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+    padding-bottom: 50px;
+  }
+  .special-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    width: 32%;
+    position: relative;
+    border: 1px solid #f2ecf0;
+  }
+  .special-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(157, 18, 99, 0.15);
+  }
+  .special-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #9d1263;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(157, 18, 99, 0.3);
+  }
+  .special-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #f8dae8;
+    transition: transform 0.6s ease;
+    display: block;
+  }
+  .special-card:hover .special-image {
+    transform: scale(1.05);
+  }
+  .img-container {
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+  }
+  .special-content {
+    padding: 25px 20px;
+    text-align: center;
+  }
+  .special-title {
+    font-family: 'Georgia', serif;
+    color: #9d1263;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .special-desc {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    min-height: 60px;
+  }
+  .special-price {
+    font-size: 20px;
+    color: #868e36;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .special-price span {
+    text-decoration: line-through;
+    color: #ccc;
+    font-size: 14px;
+    margin-right: 8px;
+    font-weight: normal;
+  }
+  .btn-buy {
+    background: #868e36;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 11px;
+    transition: background 0.3s;
+    display: inline-block;
+  }
+  .btn-buy:hover {
+    background: #717827;
+  }
+  .page-title {
+    color: #9d1263; 
+    font-family: 'Georgia', serif; 
+    font-size: 36px; 
+    text-align: center; 
+    margin: 40px 0 10px;
+    font-weight: bold;
+  }
+  .page-subtitle {
+    text-align: center;
+    color: #868e36;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 40px;
+  }
+</style>
+</head>
+<body>
+<div id="container">
+  <div id="topLine"></div>
+  <div id="logoPan"> <img src="images/logo.gif" width="192" height="92" alt="" id="logo" /> <img src="images/slogan.gif" width="297" height="46" alt="" id="slogan" /> </div>
+  <div id="menuPan">
+    <ul class="menu">
+      <li class="btn"><a href="index.html">home page</a></li>
+      <li class="line"></li>
+      <li class="btn"><a href="#">about us</a></li>
+      <li class="line"></li>
+      <li class="btn"><a href="#">services</a></li>
+      <li class="line"></li>
+      <li class="btn"><a href="#">bouquets</a></li>
+      <li class="line"></li>
+      <li class="btn"><a href="#">gallery</a></li>
+      <li class="line"></li>
+      <li class="btn"><a href="specials.html">specials</a></li>
+    </ul>
+  </div>
+  
+  <div id="header"> <img src="images/slogan2.gif" width="192" height="70" alt="" id="slogan2" /></div>
+
+  <div id="content" style="padding: 0 40px 40px; background: transparent;">
+    <h1 class="page-title">Exclusive Specials</h1>
+    <p class="page-subtitle">Hand-picked seasonal offers crafted just for you.</p>
+
+    <div class="specials-grid">
+      <!-- Card 1 -->
+      <div class="special-card">
+        <div class="special-badge">-20% OFF</div>
+        <div class="img-container">
+          <img src="images/img_prod.jpg" class="special-image" alt="Spring Blossom" />
+        </div>
+        <div class="special-content">
+          <h3 class="special-title">Spring Blossom Mix</h3>
+          <p class="special-desc">A delicate arrangement of fresh tulips and pink lilies perfect for brightening any desk.</p>
+          <div class="special-price"><span>$45.00</span> $36.00</div>
+          <a href="#" class="btn-buy">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="special-card">
+        <div class="special-badge">BOGO FREE</div>
+        <div class="img-container">
+          <img src="images/img_prod-13.jpg" class="special-image" alt="Romantic Red" />
+        </div>
+        <div class="special-content">
+          <h3 class="special-title">Romantic Red Roses</h3>
+          <p class="special-desc">Buy one classic dozen red roses, get second completely free. The ultimate romantic gesture.</p>
+          <div class="special-price">$65.00</div>
+          <a href="#" class="btn-buy">Claim Offer</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="special-card">
+        <div class="special-badge">FREE DELIVERY</div>
+        <div class="img-container">
+          <img src="images/img_prod-14.jpg" class="special-image" alt="Golden Sunshine" />
+        </div>
+        <div class="special-content">
+          <h3 class="special-title">Golden Sunshine</h3>
+          <p class="special-desc">Vibrant sunflowers mixed with white daisies. Includes premium complimentary shipping.</p>
+          <div class="special-price">$52.00</div>
+          <a href="#" class="btn-buy">Order Now</a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<div id="footer">
+  <p><a href="index.html">HOME PAGE</a> | <a href="#">ABOUT US</a> | <a href="#">BOUQUETS</a> | <a href="specials.html">SPECIALS</a><br/>
+    Copyright &copy; Your Floral Boutique | Design by <a href="http://freshtemplates.com/">Website Templates</a></p>
+</div>
+<div align=center>This template downloaded from <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div>
+</body>
+</html>
